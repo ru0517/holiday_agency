@@ -229,6 +229,7 @@ a:hover {
 @media (min-width: 900px) {
   .nav {
     display: flex;
+    margin-left: 4.25rem;
   }
 
   .menu-toggle {
@@ -243,6 +244,7 @@ a:hover {
 @media (min-width: 1024px) {
   .nav {
     gap: 1.5rem;
+    margin-left: 5.25rem;
   }
 
   .nav a {
