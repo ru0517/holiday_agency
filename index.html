@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="10-дневное люксовое путешествие по Азербайджану с Tourelax — виллы, VIP-транспорт, гид. 1–10 июля. 6000 zł." />
-  <title>Tourelax — Азербайджан | Люксовый тур</title>
+  <meta name="description" content="" data-i18n="meta.desc" />
+  <title data-i18n="meta.title">Tourelax — Azerbejdżan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -15,27 +15,35 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="logo" href="#">Tourelax</a>
-      <nav class="nav" aria-label="Основная навигация">
-        <a href="#tour">Тур</a>
-        <a href="#included">Включено</a>
-        <a href="#program">Программа</a>
-        <a href="#videos">Видео</a>
-        <a href="#advantages">Преимущества</a>
-        <a href="#map">Карта</a>
-        <a href="#contact" class="nav-cta">Контакты</a>
+      <nav class="nav" data-i18n-attr="aria-label:nav.label" aria-label="Navigation">
+        <a href="#tour" data-i18n="nav.tour">Wycieczka</a>
+        <a href="#included" data-i18n="nav.included">W cenie</a>
+        <a href="#program" data-i18n="nav.program">Program</a>
+        <a href="#videos" data-i18n="nav.videos">Wideo</a>
+        <a href="#advantages" data-i18n="nav.advantages">Zalety</a>
+        <a href="#map" data-i18n="nav.map">Mapa</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav.cta">Rezerwuj</a>
       </nav>
-      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Открыть меню">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="header-tools">
+        <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Language">
+          <button type="button" class="lang-btn lang-btn--active" data-lang="pl" aria-pressed="true">PL</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          <button type="button" class="lang-btn" data-lang="tr" aria-pressed="false">TR</button>
+          <button type="button" class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+        </div>
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" data-i18n-attr="aria-label:menu.open" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
     <div id="mobile-nav" class="mobile-nav" hidden>
-      <a href="#tour">Тур</a>
-      <a href="#included">Включено</a>
-      <a href="#program">Программа</a>
-      <a href="#videos">Видео</a>
-      <a href="#advantages">Преимущества</a>
-      <a href="#map">Карта</a>
-      <a href="#contact">Контакты</a>
+      <a href="#tour" data-i18n="nav.tour">Wycieczka</a>
+      <a href="#included" data-i18n="nav.included">W cenie</a>
+      <a href="#program" data-i18n="nav.program">Program</a>
+      <a href="#videos" data-i18n="nav.videos">Wideo</a>
+      <a href="#advantages" data-i18n="nav.advantages">Zalety</a>
+      <a href="#map" data-i18n="nav.map">Mapa</a>
+      <a href="#contact" data-i18n="nav.contact">Kontakt</a>
     </div>
   </header>
 
@@ -43,145 +51,145 @@
     <section class="hero" id="tour">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-content">
-        <p class="hero-label">Эксклюзивный маршрут</p>
-        <h1>10-дневное люксовое и незаменимое путешествие по Азербайджану</h1>
-        <p class="hero-dates">1 июля — 10 июля</p>
-        <p class="hero-sub">Проживание в частных домах и виллах с VIP-транспортом</p>
+        <p class="hero-label" data-i18n="hero.label">Ekskluzywna trasa</p>
+        <h1 data-i18n="hero.h1">10-dniowa podróż</h1>
+        <p class="hero-dates" data-i18n="hero.dates">1–10 lipca</p>
+        <p class="hero-sub" data-i18n="hero.sub">Nocleg…</p>
         <div class="hero-price">
           <span class="price-value">6000 zł</span>
-          <span class="price-note">Авиабилет и виза не включены</span>
+          <span class="price-note" data-i18n="hero.priceNote">Bilet…</span>
         </div>
-        <a class="btn-primary" href="#contact">Забронировать</a>
+        <a class="btn-primary" href="#contact" data-i18n="hero.cta">Rezerwuj</a>
       </div>
     </section>
 
     <section class="section included" id="included">
       <div class="container">
-        <h2 class="section-title">Что входит в стоимость</h2>
-        <p class="section-lead">Полный комфорт: от питания до экскурсий — всё продумано.</p>
+        <h2 class="section-title" data-i18n="inc.title">W cenie</h2>
+        <p class="section-lead" data-i18n="inc.lead">…</p>
         <ul class="included-list">
-          <li>Проживание в частных домах и виллах с бассейном</li>
-          <li>Три приёма пищи в день (завтрак, обед, ужин), национальные сладости, свежие фрукты, алкогольные и безалкогольные напитки</li>
-          <li>VIP-транспорт (комфортабельный микроавтобус или роскошный автомобиль)</li>
-          <li>Услуги гида</li>
-          <li>Экскурсии и входные билеты</li>
+          <li data-i18n="inc.1">…</li>
+          <li data-i18n="inc.2">…</li>
+          <li data-i18n="inc.3">…</li>
+          <li data-i18n="inc.4">…</li>
+          <li data-i18n="inc.5">…</li>
         </ul>
       </div>
     </section>
 
     <section class="section program" id="program">
       <div class="container">
-        <h2 class="section-title">Программа тура</h2>
-        <p class="section-lead">10 дней: море, горы, леса и история Азербайджана.</p>
+        <h2 class="section-title" data-i18n="prog.title">Program</h2>
+        <p class="section-lead" data-i18n="prog.lead">…</p>
 
         <div class="day-list">
           <article class="day-card">
             <button type="button" class="day-toggle" aria-expanded="true">
-              <span class="day-num">День 1</span>
-              <span class="day-title">Встреча и размещение</span>
+              <span class="day-num" data-i18n="day1.num">Dzień 1</span>
+              <span class="day-title" data-i18n="day1.title">…</span>
               <span class="day-icon" aria-hidden="true"></span>
             </button>
             <div class="day-body">
-              <p>Трансфер в домик и размещение. Музыкальная вечеринка с мангалом на пляже в Баку: алкогольные напитки (пиво, вино, водка), игры и кальян, закат.</p>
+              <p data-i18n="day1.body">…</p>
             </div>
           </article>
 
           <article class="day-card">
             <button type="button" class="day-toggle" aria-expanded="false">
-              <span class="day-num">День 2</span>
-              <span class="day-title">Баку: архитектура и Старый город</span>
+              <span class="day-num" data-i18n="day2.num">Dzień 2</span>
+              <span class="day-title" data-i18n="day2.title">…</span>
               <span class="day-icon" aria-hidden="true"></span>
             </button>
             <div class="day-body" hidden>
-              <p>Завтрак. Экскурсия по Баку: Центр Гейдара Алиева, Старый город, Девичья башня, Дворец Ширваншахов, Национальный музей истории. Обед. Променад у Каспия. Музей азербайджанского ковра. Башни Пламени, Площадь Фонтанов. Ужин с живой музыкой.</p>
+              <p data-i18n="day2.body">…</p>
             </div>
           </article>
 
           <article class="day-card">
             <button type="button" class="day-toggle" aria-expanded="false">
-              <span class="day-num">День 3</span>
-              <span class="day-title">Исмаиллы и Лахидж</span>
+              <span class="day-num" data-i18n="day3.num">Dzień 3</span>
+              <span class="day-title" data-i18n="day3.title">…</span>
               <span class="day-icon" aria-hidden="true"></span>
             </button>
             <div class="day-body" hidden>
-              <p>Завтрак, выезд в Исмаиллу в 09:00. Размещение в доме с бассейном. Деревня Лахидж — улочки и мастерские. Фотосессия в национальных костюмах. Обед с блюдами из тандыра. Возврат, отдых и музыкальный пикник у бассейна.</p>
+              <p data-i18n="day3.body">…</p>
             </div>
           </article>
 
           <article class="day-card">
             <button type="button" class="day-toggle" aria-expanded="false">
-              <span class="day-num">День 4</span>
-              <span class="day-title">Галачик и озеро Каранохур</span>
+              <span class="day-num" data-i18n="day4.num">Dzień 4</span>
+              <span class="day-title" data-i18n="day4.title">…</span>
               <span class="day-icon" aria-hidden="true"></span>
             </button>
             <div class="day-body" hidden>
-              <p>Завтрак. Водопад Галачик, пикник у водопада. Озеро Каранохур.</p>
+              <p data-i18n="day4.body">…</p>
             </div>
           </article>
 
           <article class="day-card">
             <button type="button" class="day-toggle" aria-expanded="false">
-              <span class="day-num">День 5</span>
-              <span class="day-title">Ках: Илису, храм Курмюк, мосты</span>
+              <span class="day-num" data-i18n="day5.num">Dzień 5</span>
+              <span class="day-title" data-i18n="day5.title">…</span>
               <span class="day-icon" aria-hidden="true"></span>
             </button>
             <div class="day-body" hidden>
-              <p>Завтрак, выезд в Ках, размещение с бассейном. Деревня Илису. Обед в ресторане у озера с рыбой. Храм Курмюк (I–III вв.), Улья мосты (XVIII в.), базилика в Куме (V в.). Мангал-вечеринка с напитками.</p>
+              <p data-i18n="day5.body">…</p>
             </div>
           </article>
 
           <article class="day-card">
             <button type="button" class="day-toggle" aria-expanded="false">
-              <span class="day-num">День 6</span>
-              <span class="day-title">Шеки и Лерик</span>
+              <span class="day-num" data-i18n="day6.num">Dzień 6</span>
+              <span class="day-title" data-i18n="day6.title">…</span>
               <span class="day-icon" aria-hidden="true"></span>
             </button>
             <div class="day-body" hidden>
-              <p>Завтрак, выезд в Шеки. Дворец шекинских ханов (XVIII в.) с резными окнами. Албанский храм в Кише, чай с шекинской пахлавой. Караван-сарай. Обед — шекинский пити. Отъезд в Лерик, размещение, ужин.</p>
+              <p data-i18n="day6.body">…</p>
             </div>
           </article>
 
           <article class="day-card">
             <button type="button" class="day-toggle" aria-expanded="false">
-              <span class="day-num">День 7</span>
-              <span class="day-title">Визеземин и водопад Токиахил</span>
+              <span class="day-num" data-i18n="day7.num">Dzień 7</span>
+              <span class="day-title" data-i18n="day7.title">…</span>
               <span class="day-icon" aria-hidden="true"></span>
             </button>
             <div class="day-body" hidden>
-              <p>Завтрак в Лерике. Деревня Визеземин, водопад Токиахил, пикник. Прогулка по деревне. Ужин с вином.</p>
+              <p data-i18n="day7.body">…</p>
             </div>
           </article>
 
           <article class="day-card">
             <button type="button" class="day-toggle" aria-expanded="false">
-              <span class="day-num">День 8</span>
-              <span class="day-title">Каньон Нисекала</span>
+              <span class="day-num" data-i18n="day8.num">Dzień 8</span>
+              <span class="day-title" data-i18n="day8.title">…</span>
               <span class="day-icon" aria-hidden="true"></span>
             </button>
             <div class="day-body" hidden>
-              <p>Завтрак. Каньон Нисекала (Ярдимли), пикник, купание у водопадов. Вечером мангал.</p>
+              <p data-i18n="day8.body">…</p>
             </div>
           </article>
 
           <article class="day-card">
             <button type="button" class="day-toggle" aria-expanded="false">
-              <span class="day-num">День 9</span>
-              <span class="day-title">Хиркан, водопады, Левенга</span>
+              <span class="day-num" data-i18n="day9.num">Dzień 9</span>
+              <span class="day-title" data-i18n="day9.title">…</span>
               <span class="day-icon" aria-hidden="true"></span>
             </button>
             <div class="day-body" hidden>
-              <p>Завтрак. Национальный парк Хиркан, пикник у водопада Сим, водопады Балликая и Сен. Ужин с левенгой (блюдо талышей). Вершина Хамошам. Возврат в Баку.</p>
+              <p data-i18n="day9.body">…</p>
             </div>
           </article>
 
           <article class="day-card">
             <button type="button" class="day-toggle" aria-expanded="false">
-              <span class="day-num">День 10</span>
-              <span class="day-title">Шоппинг и прощание</span>
+              <span class="day-num" data-i18n="day10.num">Dzień 10</span>
+              <span class="day-title" data-i18n="day10.title">…</span>
               <span class="day-icon" aria-hidden="true"></span>
             </button>
             <div class="day-body" hidden>
-              <p>Шоппинг в Баку и прощание с группой.</p>
+              <p data-i18n="day10.body">…</p>
             </div>
           </article>
         </div>
@@ -190,27 +198,26 @@
 
     <section class="section videos" id="videos">
       <div class="container">
-        <h2 class="section-title">Атмосфера тура</h2>
-        <p class="section-lead">Кадры с маршрута — вертикальные ролики с телефона отлично смотрятся на сайте.</p>
-        <p class="video-hint">Положите файлы <strong>videos/video-1.mp4</strong>, <strong>video-2.mp4</strong>, <strong>video-3.mp4</strong> в папку рядом с сайтом (можно заменить имена в коде под свои файлы).</p>
+        <h2 class="section-title" data-i18n="vid.title">Wideo</h2>
+        <p class="section-lead" data-i18n="vid.lead">…</p>
         <div class="video-grid">
           <figure class="video-card">
-            <video controls playsinline preload="metadata" poster="">
+            <video controls playsinline preload="metadata">
               <source src="videos/video-1.mp4" type="video/mp4" />
             </video>
-            <figcaption>Баку и Каспий</figcaption>
+            <figcaption data-i18n="vid.cap1">…</figcaption>
           </figure>
           <figure class="video-card">
-            <video controls playsinline preload="metadata" poster="">
+            <video controls playsinline preload="metadata">
               <source src="videos/video-2.mp4" type="video/mp4" />
             </video>
-            <figcaption>Горы и деревни</figcaption>
+            <figcaption data-i18n="vid.cap2">…</figcaption>
           </figure>
           <figure class="video-card">
-            <video controls playsinline preload="metadata" poster="">
+            <video controls playsinline preload="metadata">
               <source src="videos/video-3.mp4" type="video/mp4" />
             </video>
-            <figcaption>Водопады и природа</figcaption>
+            <figcaption data-i18n="vid.cap3">…</figcaption>
           </figure>
         </div>
       </div>
@@ -218,19 +225,19 @@
 
     <section class="section advantages" id="advantages">
       <div class="container">
-        <h2 class="section-title">Почему этот тур</h2>
+        <h2 class="section-title" data-i18n="adv.title">…</h2>
         <div class="adv-grid">
           <div class="adv-card">
-            <h3>Виллы и бассейны</h3>
-            <p>Роскошные частные дома — спокойствие и приватность.</p>
+            <h3 data-i18n="adv1.h">…</h3>
+            <p data-i18n="adv1.p">…</p>
           </div>
           <div class="adv-card">
-            <h3>VIP и гид</h3>
-            <p>Комфортный транспорт и сопровождение на всём маршруте.</p>
+            <h3 data-i18n="adv2.h">…</h3>
+            <p data-i18n="adv2.p">…</p>
           </div>
           <div class="adv-card">
-            <h3>Полный Азербайджан</h3>
-            <p>Море, горы, леса и наследие в одном путешествии.</p>
+            <h3 data-i18n="adv3.h">…</h3>
+            <p data-i18n="adv3.p">…</p>
           </div>
         </div>
       </div>
@@ -238,20 +245,20 @@
 
     <section class="section map-section" id="map">
       <div class="container">
-        <h2 class="section-title">Маршрут на карте</h2>
-        <p class="section-lead">Основные точки программы — от Баку до Хиркана и обратно.</p>
-        <div id="tour-map" class="map-wrap" role="region" aria-label="Карта маршрута тура"></div>
-        <p class="map-legend">Карта © OpenStreetMap. Метки приблизительные; точные локации уточняет гид в туре.</p>
+        <h2 class="section-title" data-i18n="map.title">…</h2>
+        <p class="section-lead" data-i18n="map.lead">…</p>
+        <div id="tour-map" class="map-wrap" role="region" data-i18n-attr="aria-label:map.aria" aria-label="Map"></div>
+        <p class="map-legend" data-i18n="map.legend">…</p>
       </div>
     </section>
 
     <section class="section contact" id="contact">
       <div class="container contact-inner">
-        <h2 class="section-title">Контакты</h2>
-        <p class="contact-lead">Напишите или напишите в Instagram — ответим на вопросы и поможем с бронированием.</p>
+        <h2 class="section-title" data-i18n="contact.title">…</h2>
+        <p class="contact-lead" data-i18n="contact.lead">…</p>
         <div class="contact-links">
           <a class="contact-btn" href="mailto:tourelax.pl@gmail.com">tourelax.pl@gmail.com</a>
-          <a class="contact-btn contact-btn--outline" href="https://www.instagram.com/tourelax.pl/" target="_blank" rel="noopener noreferrer">Instagram @tourelax.pl</a>
+          <a class="contact-btn contact-btn--outline" href="https://www.instagram.com/tourelax.pl/" target="_blank" rel="noopener noreferrer" data-i18n="contact.ig">Instagram</a>
         </div>
       </div>
     </section>
@@ -260,10 +267,11 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <span class="logo logo--footer">Tourelax</span>
-      <p>Люксовые путешествия по Азербайджану</p>
+      <p data-i18n="footer.line">…</p>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="script.js"></script>
 </body>
