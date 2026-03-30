@@ -26,13 +26,22 @@
     { lat: 38.681, lng: 48.536 },
   ];
 
+  function googleMapsSearchUrl(lat, lng) {
+    return (
+      "https://www.google.com/maps/search/?api=1&query=" +
+      encodeURIComponent(lat + "," + lng)
+    );
+  }
+
   function updateMapPopups() {
     if (!window.TOURELAX_I18N || !mapMarkers.length) return;
     var t = TOURELAX_I18N.t;
     mapMarkers.forEach(function (m, i) {
       var pair = MAP_POPUP_KEYS[i];
       if (!pair) return;
-      m.setPopupContent("<strong>" + t(pair[0]) + "</strong><br>" + t(pair[1]));
+      var content = "<strong>" + t(pair[0]) + "</strong><br>" + t(pair[1]);
+      m.unbindTooltip();
+      m.bindTooltip(content, { direction: "top", sticky: true });
     });
   }
 
@@ -63,6 +72,9 @@
       var m = L.marker([c.lat, c.lng], { icon: goldIcon }).addTo(mapInstance);
       mapMarkers.push(m);
       bounds.push([c.lat, c.lng]);
+      m.on("click", function () {
+        window.open(googleMapsSearchUrl(c.lat, c.lng), "_blank", "noopener,noreferrer");
+      });
     });
 
     updateMapPopups();

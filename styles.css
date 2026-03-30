@@ -549,11 +549,18 @@ a:hover {
 }
 
 .video-card {
+  display: flex;
+  flex-direction: column;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  overflow: hidden;
+  overflow: visible;
   box-shadow: var(--shadow-sm);
+}
+
+.video-card__frame {
+  overflow: hidden;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 }
 
 .video-card video {
@@ -565,12 +572,20 @@ a:hover {
   background: #e8e4de;
 }
 
-.video-card figcaption {
-  padding: 0.85rem 1rem 1rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--color-text);
+.video-card .video-caption {
+  flex-shrink: 0;
+  padding: 0.9rem 0.85rem 0.65rem;
   margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+  line-height: 1.45;
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 
 .video-card .video-empty {
@@ -613,6 +628,7 @@ a:hover {
   border: none !important;
   margin-left: 0 !important;
   margin-top: 0 !important;
+  cursor: pointer;
 }
 
 .map-legend {
